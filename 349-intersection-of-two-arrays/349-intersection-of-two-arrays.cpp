@@ -17,7 +17,7 @@ public:
     }
     for(int k=0;k<N;k++)
     {
-        if(arr[k]>=2)
+        if(arr[k]==2)
         {
             ans.push_back(k);
         }

@@ -14,15 +14,19 @@ class Solution{
   public:
     int MissingNumber(vector<int>& array, int n) 
     {
-        /*sort(array.begin(),array.end());
-        int no=0;
-        for(int i=0;i<n;i++)
-        {
-            no^=(array[i]^(i+1));
-        }
-        return no;*/
+        int no;
+       for(int i=1;i<=n;i++)
+       {
+           no^=i;
+       }
+       for(int i=0;i<array.size();i++)
+       {
+       no^=array[i];
+       }
+       
+       return no;
         
-        int s=0;
+        /*t s=0;
         int d=0;
         for(int i=1;i<=n;i++)
         {
@@ -32,7 +36,7 @@ class Solution{
         {
             d+=array[i];
         }
-        return (s-d);
+        return (s-d);*/
         
         // Your code goes here
     }

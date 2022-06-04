@@ -7,8 +7,20 @@ class Solution {
   public:
     int setBits(int N) {
         // Write Your Code here
-        int ans=__builtin_popcount(N);
-        return ans;
+        /*int ans=__builtin_popcount(N);
+        return ans;*/
+        int no=N;
+        int c=0;
+        while(no!=0)
+        {
+            int d=no%2;
+            if(d==1)
+            {
+                c++;
+            }
+            no/=2;
+        }
+        return c;
     }
 };
 

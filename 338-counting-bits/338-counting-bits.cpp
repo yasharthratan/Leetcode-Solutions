@@ -2,25 +2,26 @@ class Solution {
 public:
     vector<int> countBits(int n) 
     {
-        /*vector<int>ans;
+        vector<int>ans;
         for(int i=0;i<=n;i++)
         {
             int c=0;
-            while(i>0)
+            int num=i;
+            while(num>0)
             {
-                int d=i%2;
+                int d=num%2;
                 if(d==1)
                 {
                     c++;
                 }
-                i/=2;
+                num/=2;
             }
             ans.push_back(c);
             
         }
         return ans;
-        */
-        vector<int> ans;
+        
+       /* vector<int> ans;
 		
 		// iterating fromt 0 to n
         for(int i = 0; i<=n; i++)
@@ -39,6 +40,6 @@ public:
             ans.push_back(sum);
         }
 		// return 
-        return ans;
+        return ans;*/
     }
 };

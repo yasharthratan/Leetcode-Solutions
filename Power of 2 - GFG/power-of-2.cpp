@@ -27,6 +27,21 @@ class Solution{
         }
         
     }
+     /*
+        
+        __builtin_popcount(x): This function is used to count 
+        the number of one’s(set bits) in an integer. 
+        ye tareeka sirf 2 ke liye use hoga jabki uper waala kisi
+        ki power ke liye use ho sakta hai
+        
+        
+      NOTE:  __builtin_popcountll(x): for long long data type
+        
+        int cnt=__builtin_popcountll(n);
+        
+        if(cnt==1) return true;
+        return false;
+    */
 };
 
 // { Driver Code Starts.

@@ -19,6 +19,17 @@ public:
         s = std::regex_replace(s, std::regex("^ +| +$|( ) +"), "$1");
         
         return s;
-        
+        // if(s[0]==' ' && s[n-1]==' ')// removing the extra trailing space
+        // {
+        //     return(s.substr(1,n-2));
+        // }
+        // if(s[0]==' ')
+        // {
+        //     return(s.substr(1,n-1));
+        // }
+        // if(s[n-1]==' ')
+        // {
+        //      return(s.substr(0,n-2));
+        // }
     }
 };

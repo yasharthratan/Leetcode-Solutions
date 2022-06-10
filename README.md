@@ -1,3 +1,3 @@
 # Leetcode-Solutions
 
-### Collection of solutions to LeetCode questions to ace the coding interview ! 
+### Collection of solutions to LeetCode and GFG questions to ace the coding interview ! 

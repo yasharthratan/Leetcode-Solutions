@@ -3,23 +3,24 @@ public:
     int findNumbers(vector<int>& nums) 
     {
         int n=nums.size();
-        int c=0;
-        int cp;
+        int no,c,ans=0;
         
         for(int i=0;i<n;i++)
         {
-            cp=0;
-            while(nums[i]>0)
+            no=nums[i];
+            c=0;
+            while(no>0)
             {
-                nums[i]=nums[i]/10;
-                cp+=1;
+                int d=no%10;
+                c++;
+                no=no/10;
             }
-             if(cp%2==0)
-                {
-                    c+=1;
-                }
+            if(c%2==0)
+            {
+                ans++;
+            }
         }
-        return c;
+        return ans;
         
     }
 };

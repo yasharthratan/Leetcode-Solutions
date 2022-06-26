@@ -87,7 +87,7 @@ int GetNth(struct node* head, int index){
   {
       if(c==index)
       {
-          return head->data;
+           return head->data;
       }
       else
       {

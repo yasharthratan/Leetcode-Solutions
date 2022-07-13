@@ -4,6 +4,7 @@ public:
     {
         int n=prices.size();
         int maxp=0;
+        int maxi;
         int mini=INT_MAX;
         
         for(int i=0;i<n;i++)
@@ -12,6 +13,5 @@ public:
             maxp=max(maxp,prices[i]-mini);
         }
         return maxp;
-        
     }
 };

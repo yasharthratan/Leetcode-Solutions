@@ -4,7 +4,7 @@ public:
     {
         vector<vector<int>>ans;
          
-        for(int i = 0; i<numRows; ++i)
+        for(int i = 0; i<numRows; i++)
         {
             vector<int> row(i+1, 1);
             for(int j = 1; j<i; ++j)
